@@ -2,10 +2,10 @@
 	"name": "personal-site",
 	"version": "1.0.0",
 	"description": "Portfolio site built with ReactJS",
+	"homepage": "https://AdiBhan.github.io/AdiBhan",
 	"author": {
 		"name": "Adi Bhan",
-		"email": "abhan03@bu.edu",
-		"url": "AdiBhan.github.io/"
+		"email": "abhan03@bu.edu"
 	},
 	"license": "MIT",
 	"dependencies": {
@@ -30,7 +30,9 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
 		"extends": [
