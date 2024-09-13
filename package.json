@@ -1,11 +1,11 @@
 {
 	"name": "personal-site",
 	"version": "1.0.0",
-	"description": "Personal professional site template built using Reactjs",
+	"description": "Portfolio site built with ReactJS",
 	"author": {
-		"name": "Eddie O'Connor",
-		"email": "eddie.oconnor3@gmail.com",
-		"url": "https://tbd.com"
+		"name": "Adi Bhan",
+		"email": "abhan03@bu.edu",
+		"url": "AdiBhan.github.io/"
 	},
 	"license": "MIT",
 	"dependencies": {
@@ -17,6 +17,7 @@
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^13.5.0",
+		"personal-site": "file:",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-ga4": "^2.1.0",
@@ -52,5 +53,8 @@
 	"prettier": {
 		"useTabs": true,
 		"tabWidth": 4
+	},
+	"devDependencies": {
+		"gh-pages": "^6.1.1"
 	}
 }

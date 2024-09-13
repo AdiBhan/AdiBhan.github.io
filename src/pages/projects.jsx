@@ -9,38 +9,58 @@ import INFO from "../data/user";
 import "./styles/projects.css";
 
 const Projects = () => {
+	const codedDescription = (
+		<span>
+			I've been actively involved in{" "}
+			<strong>diverse tech projects since 2022</strong>, blending my
+			academic knowledge with real-world applications. From creating an{" "}
+			<strong>award-winning digital ad generator</strong> at Boston Hacks
+			to developing a <strong>carbon footprint estimator</strong> for
+			online shoppers, I've consistently pushed the boundaries of what
+			technology can achieve.
+			<br />
+			<br />
+			My work spans <strong>full-stack web development</strong>,{" "}
+			<strong>cybersecurity analysis</strong>, and{" "}
+			<strong>innovative app creation</strong>, always with a focus on
+			solving real-world problems. Whether it's crafting a{" "}
+			<strong>
+				centerpiece web application for Boston University's College of
+				Engineering
+			</strong>{" "}
+			or conducting{" "}
+			<strong>
+				comprehensive cybersecurity assessments for Massachusetts
+				municipalities
+			</strong>
+			, I bring a mix of{" "}
+			<em>technical skill and creative problem-solving</em> to every
+			project.
+		</span>
+	);
 
-    const codedDescription = (
-        <span>
-            I've worked on a variety of projects since beginning my coding journey in 2022 and I'm proud of the progress I've made. All of 
-            them are open-source and I welcome any feedback or contributions. I am actively researching backend technologies and how they 
-            could be integrated into future projects. These projects could include, but are not limited to, tools for <strong>non-KYC 
-            verification</strong> and <strong> distinguishing AI from non-AI generated content.</strong>
-        </span>
-    )
+	const codedTitle = <span>Projects</span>;
 
-    const codedTitle = (
-        <span>
-            Each project tile contains production and Git repo links. Give them a try!'
-        </span>
-    )
-    useEffect(() => {
-		document.title = `Projects | ${INFO.main.title}`;
+	useEffect(() => {
+		document.title = `Projects | ${INFO?.main?.title || "Portfolio"}`;
 	}, []);
 
 	return (
 		<React.Fragment>
-
 			<div className="page-content">
 				<NavBar active="projects" />
 				<div className="content-wrapper">
 					<div className="projects-container">
 						<div className="title projects-title">
-                            {INFO.project.title !== "" ? INFO.project.title : codedTitle}
+							{INFO?.project?.title !== ""
+								? INFO.project.title
+								: codedTitle}
 						</div>
 
 						<div className="subtitle projects-subtitle">
-                            {INFO.project.description !== "" ? INFO.project.description : codedDescription}
+							{INFO?.project?.description !== ""
+								? INFO.project.description
+								: codedDescription}
 						</div>
 
 						<div className="projects-list">

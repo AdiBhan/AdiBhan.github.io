@@ -27,11 +27,14 @@
 }
 
 .project-logos {
-	width: 30px;
+    width: 40px; /* Make sure it takes the full width of the container */
     display: flex;
     flex-direction: row;
     gap: 10px;
+   
 }
+
+
 
 .project-logos img {
 	width: 100%;
