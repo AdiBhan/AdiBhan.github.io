@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" />
-		<script type="text/javascript">
-			var redirect = window.location.pathname;
-			window.location.href = window.location.origin + "/#" + redirect;
+		<meta charset="utf-8" />
+		<title>Redirecting...</title>
+		<script>
+			sessionStorage.redirect = location.href;
+			location.href = "/AdiBhan/";
 		</script>
 	</head>
-	<body></body>
+	<body>
+		Redirecting...
+	</body>
 </html>

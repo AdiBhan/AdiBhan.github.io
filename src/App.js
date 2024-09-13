@@ -7,12 +7,13 @@ import ScrollToTop from "./components/common/ScrollToTop";
 import Assignments from "./pages/assignments";
 
 import "./app.css";
-import { Routes, Route, HashRouter, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
 
 function App() {
 	return (
 		<div className="App">
 			<HashRouter>
+				<ScrollToTop />
 				<Routes>
 					<Route path="/" element={<Homepage />} />
 					<Route path="/about" element={<About />} />
@@ -21,7 +22,6 @@ function App() {
 					<Route path="/contact" element={<Contact />} />
 					<Route path="*" element={<Notfound />} />
 				</Routes>
-				<ScrollToTop />
 			</HashRouter>
 		</div>
 	);
