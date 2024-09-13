@@ -12,7 +12,7 @@ import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
 function App() {
 	return (
 		<div className="App">
-			<HashRouter>
+			<BrowserRouter>
 				<ScrollToTop />
 				<Routes>
 					<Route path="/" element={<Homepage />} />
@@ -22,7 +22,7 @@ function App() {
 					<Route path="/contact" element={<Contact />} />
 					<Route path="*" element={<Notfound />} />
 				</Routes>
-			</HashRouter>
+			</BrowserRouter>
 		</div>
 	);
 }
