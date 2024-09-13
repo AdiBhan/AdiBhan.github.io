@@ -25,9 +25,7 @@ const Footer = () => {
 				</div>
 
 				<div className="footer-credits">
-					<div className="footer-credits-text">
-						© 2024 Eddie O'Connor
-					</div>
+					<div className="footer-credits-text">© 2024 Adi Bhan</div>
 				</div>
 			</div>
 		</React.Fragment>

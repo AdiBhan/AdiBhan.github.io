@@ -15,7 +15,7 @@ const AllProjects = () => {
 						description={project.description}
 						linkText1={project.linkText1}
 						link1={project.link1}
-                        linkText2={project.linkText2}
+						linkText2={project.linkText2}
 						link2={project.link2}
 					/>
 				</div>

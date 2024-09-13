@@ -1,86 +1,41 @@
-# personal-react-site V1
+<h1 align="center">Hi 👋, I'm Adi Bhan</h1>
+<h3 align="center">I'm a Sophomore studying Computer Science at Boston University</h3>
 
-Simple and responsive professional website for software-engineers to showcase projects, display contact information, and tell your story.
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=adibhan&label=Profile%20views&color=0e75b6&style=flat" alt="adibhan" /> </p>
 
-<strong>👀 <a href="https://eddie-oconnor.com/" target="_blank">Live Site Demo</a></strong>
-<br/>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=adibhan" alt="adibhan" /></a> </p>
 
-<center>
-    <img src="public\homepage-screenshot.png" alt="personal-react-site image" />
-</center>
+- 🌱 Technologies I’m currently learning - **ReactJS, Firebase, Django & TypeScript**
 
--   [Features](#-features)
--   [Installation and Setup](#-installation-and-setup)
--   [Structure](#-structure)
--   [Quick Configurations](#-quick-configurations)
--   [Launch](#-launching-the-site-with-cloudflare)
--   [Future improvements and Contributions](#-future-improvements-and-contributions)
+- 👨‍💻 All of my projects are available @ [https://adibhan.github.io/](https://adibhan.github.io/)
 
-## 📙 Features
+- 📫 How to reach me | **abhan03@Bu.edu** | **adityabhan99@gmail.com**
 
--   📖 Multi-Page
-    -   Home
-    -   About
-    -   Projects
-    -   Contact
--   📱 Fully Responsive
--   🛠 Easy configurations
 
-## 🛠 Installation and Setup
+## Previous Projects Projects 
 
-1. Clone the repository
-2. Ensure `NodeJS` and `git` are installed on your computer
-2. Run `npm install` in the terminal
-3. Then run `npm start` which will run the app in development mode and open a new browser tab
-4. If the browser does not automatically open, look for the local port url in the terminal which will look something like this `Local:http://localhost:3000`
-5. Make changes and see them reflected in the browser when saved
-6. Continued instructions for novice coders in the [Quick Configurations](#-quick-configurations) section
+- ParentAlly.social -> For the 2023 Civic Tech Hackathon, I worked on the parentally.social project as a part of a team of developers to create a online platform that connects single parents by geographic area. My main contribution was designing a chatbot using OpenAI and ExpressJS. I also assisted in creating the website's front-end using HTML and CSS. It was a challenging but rewarding experience working on this project and I am excited to see its future development.
+- **View Demo ➡️ http://parentally.social/** | <a href= "https://devpost.com/software/parentally-empowering-single-parents?ref_content=my-projects-tab&ref_feature=my_projects">DEVPOST</a> 
 
-## 📁 Structure
+- USColleges.live - Introducing "USColleges" a one-stop website for all your college ranking needs! This website brings together data from multiple college ranking websites and presents it in an easy-to-compare format. With a sleek and modern user interface built with ReactJS, Tailwind CSS, and Semantic UI, you'll have a seamless browsing experience as you compare colleges and find the perfect fit for you.
+**View Demo ➡️ http://uscolleges.live/** 
 
--   `/public`: publicly accessible media (i.e. images)
-    - use [favicon](https://favicon.io/) to update your own picture(s) for site tab icons 
--   `/src`: all the components used in this project
-    -   `/src/components/`: houses each page (`/src/pages`), shared components (i.e. navbar) and their respective css styles
-    -   `/src/data`: make quick global configurations here
+- I created a personal portfolio website with ReactJS and TailwindCSS. I plan on updating and improving this site as I continue to learn more about React.
+**View Demo ➡️ https://adibhan.github.io/**
 
-## ⚙️ Quick Configurations
+- Adi - For the 2023 BostonHacks Hackathon, I worked with a team of developers to create Adi -> AI Advertisement Generator: Adi is a mobile application that generate advertisements using artificial intelligence from Dalle-@@. It interfaces with OpenAI's API, and features a React Native front-end and Django back-end. It won BostonHacks2022's "Best Overall Hack".
+**Learn More**: https://www.getadi.tech | <a href= "https://bostonhacks-2022.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio">DEVPOST</a> 
 
-- Directory: `/src/data/` - Your changes in these files will be reflected upon save in the local development browser you opened in a previous step.
+- Greengle -  Carbon footprint tracker for online shoppers: Greengle is a companion site for *Amazon.com* that helps consumers estimate the carbon footprint of their Amazon purchase. This project was initially created during an eight-hour "BU Spark!" sustainability mini-hackathon and won the "Best Code" prize. It functions by determining the distance between the buyer's address and the nearest Amazon fullfilment center. It calls the Radar API to calculate the miles a vehicle must travel, and then calls another API to estimate the kilograms of CO2 gas emitted given the type of vehicle.
+**Learn More**: https://github.com/AdiBhan/Greengle
 
--   `user.js` - Update the displayed text and images throughout the site by simply updating each field to the desired text or image file path.
 
--   `styles.css` - Change the font colors and font families of the whole application without editing any other code files. Simply erase the values, input a new color or font, then hit save.
-    - [Here](https://www.w3schools.com/colors/colors_picker.asp) is a good tool to see and copy color codes to input below when using `styles.css`
-    - Visit [Google Fonts](https://fonts.google.com/) to browse and select fonts by adding them to your cart. View your selected families, then click `<> get embed code` and select `@import` to copy/paste your new import url into `index.css`. You will then be able to globally update the site's fonts by choosing new primary and secondary fonts in `styles.css`
-<br/>
 
-    ```css
-    :root {
-    	/* ------- colors ------- */
-    	--primary-color: #27272a;
-    	--secondary-color: #65656d;
-    	--tertiary-color: #acacb4;
-    	--quaternary-color: #e4e4e7;
-    	--link-color: #14b8a6;
-    	/* ---------------------- */
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
 
-    	/* ------- fonts ------- */
-    	--primary-font: "Heebo", sans-serif;
-    	--secondary-font: "Roboto", sans-serif;
-    	/* --------------------- */
-    }
-    ```
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=adibhan&show_icons=true&locale=en&layout=compact" alt="adibhan" /></p>
 
-## 🚀 Launching the Site with Cloudflare
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=adibhan&show_icons=true&locale=en" alt="adibhan" /></p>
 
-1. Create Cloudflare account
-2. Navigate to Workers & Pages
-3. Create new page
-4. Connect to your cloned Git repo
-5. Input `npm run build` as build command and `build` as location
-6. Investigate setting up a custom URL (optional)
 
-## 🌱 Future improvements and Contributions
-
-I welcome any and all feedback and ideas from seasoned developers and novice users! Please reference `github\templates` when doing so.
