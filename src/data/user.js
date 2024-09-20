@@ -99,7 +99,7 @@ const INFO = {
 		{
 			title: "abhan03-assignment-1",
             description:
-                "Dummy Assignment. Contains hw.py file with a function that adds 2 integers together",
+                "Data Collection and Analysis",
             logos: [
                 "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
             ],
