@@ -34,7 +34,7 @@ const Assignments = () => {
 	const codedTitle = <span>Academic Assignments</span>;
 
 	useEffect(() => {
-		document.title = `Assignments | ${INFO.main.title}`;
+		document.title = `assignments | ${INFO.main.title}`;
 	}, []);
 
 	return (

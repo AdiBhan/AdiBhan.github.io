@@ -24,19 +24,13 @@ const AllAssignments = () => {
 					</div>
 					<div className="assignment-links">
 						<a
-							href={assignment.link1}
+							href={assignment.link}
 							target="_blank"
 							rel="noreferrer"
 						>
-							{assignment.linkText1}
+							{assignment.linkText}
 						</a>
-						<a
-							href={assignment.link2}
-							target="_blank"
-							rel="noreferrer"
-						>
-							{assignment.linkText2}
-						</a>
+			
 					</div>
 				</div>
 			))}

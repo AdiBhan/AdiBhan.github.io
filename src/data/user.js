@@ -4,7 +4,7 @@ const INFO = {
 		name: "Adi Bhan",
 		email: "abhan03@bu.edu",
 		profile_img:
-			"https://media.licdn.com/dms/image/v2/D4E03AQHWdA1NqnJyag/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1674081463007?e=1731542400&v=beta&t=0ogDuQNAu2Cnklt7B43Ngd72Xnr7cJtW784r03mdWW0",
+			"https://media.licdn.com/dms/image/v2/D4E03AQH7Ya78chjq2g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726450626836?e=1732147200&v=beta&t=a8wTtKky1YyN4dMvxTTUtZqI5-gZGuFfoTc1M_miH7A",
 	},
 
 	socials: {
@@ -93,10 +93,20 @@ const INFO = {
 			logos: [
 				"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			],
-			linkText1: "GitHub Link",
-			link1: "https://github.com/AdiBhan/abhan03-assignment-0",
+			linkText: "GitHub Link",
+			link: "https://github.com/AdiBhan/abhan03-assignment-0",
 		},
-	],
+		{
+			title: "abhan03-assignment-1",
+            description:
+                "Dummy Assignment. Contains hw.py file with a function that adds 2 integers together",
+            logos: [
+                "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+            ],
+            linkText: "GitHub Link",
+            link: "https://github.com/AdiBhan/abhan03-assignment-1/",
+		}
+	], 
 };
 
 export default INFO;

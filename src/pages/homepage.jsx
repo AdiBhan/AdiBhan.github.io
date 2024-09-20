@@ -25,9 +25,8 @@ const Homepage = () => {
 
 	const codedTitle = (
 		<span>
-			"I'm on a mission to craft delightful apps that solve real-world
-			challenges, turning complex problems into engaging, user-centric
-			solutions"
+			"I'm on a mission to craft apps that solve real-world challenges,
+			turning complex problems into engaging, user-centric solutions"
 		</span>
 	);
 
