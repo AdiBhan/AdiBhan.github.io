@@ -2,13 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-
+import "../../data/user.js";
 import "./styles/project.css";
 
 const Project = (props) => {
-	const { logos, title, description, linkText1, link1, linkText2, link2 } =
-		props;
-
+	const { logos, title, description, linkText1, link1, linkText2, link2 } = props;
+	console.log(link1, link2);
 	function renderLogos() {
 		if (Array.isArray(logos)) {
 			return logos.map((logo, index) => (
@@ -27,15 +26,28 @@ const Project = (props) => {
 					<div className="project-title">{title}</div>
 					<div className="project-description">{description}</div>
 					<div className="project-links">
-						<div className="project-link-icon">
+						
+						
+						{link1? (
+							<>
+							<div className="project-link-icon">
 							<FontAwesomeIcon icon={faLink} />
 						</div>
-						<Link to={link1}>
-							<div className="project-link-text">{linkText1}</div>
-						</Link>
-						<Link to={link2}>
-							<div className="project-link-text">{linkText2}</div>
-						</Link>
+							<Link to={link1}>
+								<div className="project-link-text">{linkText1}</div>
+							</Link>
+							</>
+						) : (
+							<div></div>
+						)}
+						
+						{link2  ? (
+							<Link to={link2}>
+								<div className="project-link-text">{linkText2}</div>
+							</Link>
+						) : (
+							<div></div>
+						)}
 					</div>
 				</div>
 			</div>

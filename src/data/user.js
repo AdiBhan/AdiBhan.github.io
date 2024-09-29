@@ -48,7 +48,7 @@ const INFO = {
 			linkText1: "GitHub",
 			link1: "https://github.com/neezacoto/Adi-ai-ads",
 			linkText2: "Demo",
-			link2: "https://private-user-images.githubusercontent.com/74576449/201528398-008893d8-7586-4791-aefa-43adc0c12eb0.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjYxODYzODksIm5iZiI6MTcyNjE4NjA4OSwicGF0aCI6Ii83NDU3NjQ0OS8yMDE1MjgzOTgtMDA4ODkzZDgtNzU4Ni00NzkxLWFlZmEtNDNhZGMwYzEyZWIwLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTEzVDAwMDgwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZkZDQ5M2I0MmZjY2EyYThjMGJjN2NhMDI1NWVkMDU5ZmQzNTcyNGNjM2Q0ZWE3MzBlZTAxODY1ZDY4ZjYwOGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.MFGbldIgFQXgpiqJbvM5oGioOzOEHqipnpnLeYqXRVk",
+			link2: "https://www.youtube.com/shorts/BpljlWJkyfA",
 		},
 		{
 			title: "2023 Cybersecurity Internship at MAPC ",
@@ -64,7 +64,7 @@ const INFO = {
 			linkText1: "GitHub",
 			link1: "https://github.com/AdiBhan/MAPC_Analysis/tree/main",
 			linkText2: "Live",
-			link2: "#", // Replace with actual live link if available
+			link2: "", // Replace with actual live link if available
 		},
 		{
 			title: "College of Engineering Lobby Display Web Application [Private]",
@@ -80,9 +80,9 @@ const INFO = {
 				"https://www.svgrepo.com/show/303360/nodejs-logo.svg",
 			],
 			linkText1: "GitHub",
-			link1: "#", // Replace with actual GitHub link if available
+			link1: "", // Replace with actual GitHub link if available
 			linkText2: "Live",
-			link2: "#", // Replace with actual live link if available
+			link2: "", // Replace with actual live link if available
 		},
 	],
 	assignments: [
@@ -105,6 +105,23 @@ const INFO = {
             ],
             linkText: "GitHub Link",
             link: "https://github.com/AdiBhan/abhan03-assignment-1/",
+		}, {
+			title: "abhan03-assignment-2",
+            description:
+                "A ReactJS-based interactive visualizer for the K-Means clustering algorithm with a Flask backend, enabling users to step through the algorithm's process and view real-time cluster formation.",
+            logos: [
+                "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+				"https://cdn.worldvectorlogo.com/logos/flask.svg",
+				"https://www.svgrepo.com/show/327388/logo-react.svg",
+				"https://blog.teamtreehouse.com/wp-content/uploads/2015/05/87a5a0fdc86455c3f94b0b0eebfdb1b9_400x400.png",
+				"https://seeklogo.com/images/M/matplotlib-logo-7676870AC0-seeklogo.com.png",
+				"https://cdn.worldvectorlogo.com/logos/pandas.svg"
+
+        
+            ],
+            linkText: "GitHub Link",
+			demoText: "Demo Video",
+            link: "https://github.com/AdiBhan/kmeans-visualizer",
 		}
 	], 
 };

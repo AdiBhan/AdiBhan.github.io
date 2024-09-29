@@ -4,9 +4,11 @@ import INFO from "../data/user";
 import "./styles/allAssignments.css";
 
 const AllAssignments = () => {
+	
 	return (
+		
 		<div className="all-assignments-container">
-			{INFO.assignments.map((assignment, index) => (
+			{INFO.assignments.slice().reverse().map((assignment, index) => (
 				<div className="assignment-card" key={index}>
 					<div className="assignment-title">{assignment.title}</div>
 					<div className="assignment-description">
@@ -30,7 +32,16 @@ const AllAssignments = () => {
 						>
 							{assignment.linkText}
 						</a>
-			
+						{assignment.demoText && (
+							<a
+								href="../assets/videos/assign-02.mp4"
+								target="_blank"
+							
+								rel="noopener noreferrer"
+							>
+								{assignment.demoText}
+							</a>
+						)}
 					</div>
 				</div>
 			))}

@@ -70,7 +70,10 @@
 	padding-left: 20px;
 	font-weight: 700;
 }
-
+.disabled-link {
+	color: grey !important;
+	cursor: not-allowed;
+}
 .project-link-text:hover {
 	color: var(--link-color);
 	transition: color 0.1s ease-in-out, font-weight 0.1s ease-in-out;
