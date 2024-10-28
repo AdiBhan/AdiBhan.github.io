@@ -122,7 +122,60 @@ const INFO = {
             linkText: "GitHub Link",
 			demoText: "Demo Video",
             link: "https://github.com/AdiBhan/kmeans-visualizer",
+		}, 
+
+		{
+			title: "abhan03-assignment-3",
+            description:
+                "Applying SVD to MNIST dataset and train and train a logistic regression classifier",
+            logos: [
+                "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			
+				"https://cdn.worldvectorlogo.com/logos/numpy-1.svg",
+				"https://4008838.fs1.hubspotusercontent-na1.net/hubfs/4008838/supported-scipy.png",
+			
+				"https://seeklogo.com/images/M/matplotlib-logo-7676870AC0-seeklogo.com.png",
+				"https://cdn.worldvectorlogo.com/logos/pandas.svg"
+
+        
+            ],
+            linkText: "GitHub Link",
+            link: "https://github.com/AdiBhan/abhan03-assignment-3",
+		},
+		{
+			title: "abhan03-assignment-4",
+            description:
+                "A web application implementing a Latent Semantic Analysis (LSA) based search engine using FastAPI and Angular.",
+            logos: [
+                "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			
+				"https://cdn.worldvectorlogo.com/logos/numpy-1.svg",
+				"https://4008838.fs1.hubspotusercontent-na1.net/hubfs/4008838/supported-scipy.png",
+			
+				"https://repository-images.githubusercontent.com/260928305/92388600-8d1c-11ea-9993-a726466b5099",
+				"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+
+        
+            ],
+            linkText: "GitHub Link",
+            link: "https://github.com/AdiBhan/lsa-search-engine",
+			demoText: "Demo Video",
+		}, {
+			title: "abhan03-assignment-5",
+            description:
+                "K-Nearest Neighbors Kaggle Competition submission",
+            logos: [
+                "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			
+				"https://cdn.worldvectorlogo.com/logos/numpy-1.svg",
+				// Kaggle icon
+				"https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png"
+        
+            ],
+            linkText: "GitHub Link",
+            link: "https://github.com/AdiBhan/abhan03-assignment-5",
 		}
+		
 	], 
 };
 
