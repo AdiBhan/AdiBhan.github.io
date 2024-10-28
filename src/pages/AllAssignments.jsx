@@ -34,11 +34,11 @@ const AllAssignments = () => {
 						</a>
 						{assignment.demoText && (
 							<a
-								href="../assets/videos/assign-02.mp4"
+								href={`../assets/videos/assign-0${assignment.title.replace("abhan03-assignment-", "")}.mp4`}
 								target="_blank"
 							
 								rel="noopener noreferrer"
-							>
+							> 
 								{assignment.demoText}
 							</a>
 						)}

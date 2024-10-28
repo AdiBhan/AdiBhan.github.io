@@ -11,7 +11,7 @@ import "./styles/assignments.css";
 const Assignments = () => {
 	const codedDescription = (
 		<span>
-			Throughout my academic journey at Boston University, I've completed
+			Throughout my CS506 academic journey at Boston University, I've completed
 			a variety of <strong>challenging assignments and projects</strong>{" "}
 			that have honed my skills in{" "}
 			<strong>computer science and software engineering</strong>. These
