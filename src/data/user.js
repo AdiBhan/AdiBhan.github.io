@@ -174,6 +174,22 @@ const INFO = {
             ],
             linkText: "GitHub Link",
             link: "https://github.com/AdiBhan/abhan03-assignment-5",
+		}, {
+			title: "abhan03-midterm-model",
+            description:
+                "Midterm Data Science Competition for BU CS506 - The goal of this competition is to predict the star rating associated with user reviews from Amazon Movie Reviews using the available features",
+            logos: [
+                "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			
+				"https://cdn.worldvectorlogo.com/logos/numpy-1.svg",
+				// Kaggle icon
+				"https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png"
+        
+            ],
+            linkText: "GitHub Link",
+            link: "https://github.com/AdiBhan/CS506-Midterm-Model.git",
+			demoText: "Kaggle Link",
+			liveLink: "https://www.kaggle.com/competitions/cs-506-midterm-fall-2024/overview",
 		}
 		
 	], 
