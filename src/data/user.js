@@ -208,7 +208,7 @@ const INFO = {
             linkText: "GitHub Link",
             link: "https://github.com/AdiBhan/Assignment-6-Linear-Regression-.git",
 			demoText: "Demo Video",
-			liveLink: "https://www.youtube.com/watch?v=x3nxo0w-c8o",
+			demoLink: "https://www.youtube.com/watch?v=x3nxo0w-c8o",
 		}
 		
 	], 

@@ -32,9 +32,19 @@ const AllAssignments = () => {
 						>
 							{assignment.linkText}
 						</a>
-						{assignment.demoText && (
+						{assignment.demoText && !assignment.demoLink &&  (
 							<a
 								href={`../assets/videos/assign-0${assignment.title.replace("abhan03-assignment-", "")}.mp4`}
+								target="_blank"
+							
+								rel="noopener noreferrer"
+							> 
+								{assignment.demoText}
+							</a>
+						)}
+						{assignment.demoLink && (
+							<a
+								href= {assignment.demoLink}
 								target="_blank"
 							
 								rel="noopener noreferrer"

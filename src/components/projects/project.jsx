@@ -6,8 +6,9 @@ import "../../data/user.js";
 import "./styles/project.css";
 
 const Project = (props) => {
-	const { logos, title, description, linkText1, link1, linkText2, link2 } = props;
+	const { logos, title, description, linkText1, link1, linkText2, link2, demoLink } = props;
 	console.log(link1, link2);
+	console.log("DEMO LINK", demoLink)
 	function renderLogos() {
 		if (Array.isArray(logos)) {
 			return logos.map((logo, index) => (
@@ -40,7 +41,7 @@ const Project = (props) => {
 						) : (
 							<div></div>
 						)}
-						
+						<div>
 						{link2  ? (
 							<Link to={link2}>
 								<div className="project-link-text">{linkText2}</div>
@@ -48,6 +49,16 @@ const Project = (props) => {
 						) : (
 							<div></div>
 						)}
+					{demoLink  ? (
+							<Link to={link2}>
+								<div className="project-link-text">{linkText2}</div>
+							</Link>
+						) : (
+							<div></div>
+						)}
+					
+					
+</div>
 					</div>
 				</div>
 			</div>
