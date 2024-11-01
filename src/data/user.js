@@ -190,6 +190,25 @@ const INFO = {
             link: "https://github.com/AdiBhan/CS506-Midterm-Model.git",
 			demoText: "Kaggle Link",
 			liveLink: "https://www.kaggle.com/competitions/cs-506-midterm-fall-2024/overview",
+		}, {
+			title: "abhan03-assignment-6",
+            description:
+                "A web application implementing a Latent Semantic Analysis (LSA) based search engine using FastAPI and Angular.",
+            logos: [
+                "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			
+				"https://cdn.worldvectorlogo.com/logos/numpy-1.svg",
+				"https://4008838.fs1.hubspotusercontent-na1.net/hubfs/4008838/supported-scipy.png",
+			
+				"https://static-00.iconduck.com/assets.00/flask-icon-1594x2048-84mjydzf.png",
+				"https://media.licdn.com/dms/image/v2/D4D12AQFq38cGkv_oHQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1679493396295?e=2147483647&v=beta&t=8hBosvau_9_t0Nt46DZ89TxWOgFZg_z47cMFn8o5cmM"
+
+        
+            ],
+            linkText: "GitHub Link",
+            link: "https://github.com/AdiBhan/Assignment-6-Linear-Regression-.git",
+			demoText: "Demo Video",
+			liveLink: "https://www.youtube.com/watch?v=x3nxo0w-c8o",
 		}
 		
 	], 
