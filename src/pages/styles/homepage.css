@@ -1,152 +1,159 @@
-@import "../../data/styles.css";
-
-.homepage-logo-container {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding-top: 130px;
-}
-
-.homepage-container {
-	padding-top: 120px;
-}
-
-.homepage-first-area {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.homepage-first-area-left-side {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
-.homepage-title {
-	width: 85% !important;
-}
-
-.homepage-subtitle {
-	width: 85% !important;
-}
-
-.homepage-first-area-right-side {
-	display: flex;
-	align-items: center;
-}
-
-.homepage-image-container {
-	width: 370px;
-	height: 370px;
-}
-
-.homepage-image-wrapper {
+/* Base layout */
+.system-theme {
+	background: white;
+	min-height: 100vh;
+	padding: 2rem;
+  }
+  
+  .terminal-window {
+	background: white;
+	border: 1px solid #eaeaea;
+	border-radius: 8px;
 	overflow: hidden;
-	border-radius: 10%;
-	transform: rotate(3deg);
-	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.55);
-}
-
-.homepage-image-wrapper img {
-	width: 100%;
-}
-
-.homepage-socials {
+	max-width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .window-header {
+	background: #f5f5f5;
+	padding: 0.75rem 1rem;
 	display: flex;
-	justify-content: left;
 	align-items: center;
-	padding-top: 30px;
-}
-
-.homepage-social-icon {
-	padding-right: 20px;
-	font-size: 25px;
-	transition: color 0.2s ease-in-out;
-	color: var(--secondary-color);
-}
-
-.homepage-social-icon:hover {
-	color: var(--primary-color);
-}
-
-.homepage-after-title {
+	border-bottom: 1px solid #eaeaea;
+  }
+  
+  .window-title {
+	color: #333;
+	font-size: 0.9rem;
+	font-family: 'Fira Code', monospace;
+  }
+  
+  .homepage-container {
+	padding: 2rem;
+	
+  }
+  
+  /* Main content area */
+  .homepage-first-area {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	gap: 2rem;
+	margin-bottom: 2rem;
+  }
+  
+  .terminal-text {
+	font-family: 'Fira Code', monospace;
+	color: #333;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+  }
+  
+  .file-content {
+	background: white;
+	padding: 1.5rem;
+	border-radius: 8px;
+	border: 1px solid #eaeaea;
+	margin-bottom: 2rem;
+  }
+  
+  .file-header {
+	color: #666;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid #eaeaea;
+	margin-bottom: 1rem;
+	font-family: 'Fira Code', monospace;
+  }
+  
+  /* Image container */
+  .system-window {
+	background: white;
+	border-radius: 8px;
+	border: 1px solid #eaeaea;
+	overflow: hidden;
+  }
+  
+  .homepage-image {
+	width: 100%;
+	height: auto;
+	display: block;
+	
+	
+  }
+  
+  /* Social links */
+  .system-dock {
+	background: #f8f8f8;
+	border-radius: 8px;
+	padding: 1rem;
+	margin: 2rem 0;
 	display: flex;
-}
-
-.homepage-projects {
-	flex-basis: 300px;
-	padding-top: 40px;
-}
-
-.homepage-articles {
-	flex-basis: 900px;
-	padding-top: 30px;
-	margin-left: -30px;
-}
-
-.homepage-article {
-	padding-bottom: 5px;
-}
-
-.homepage-works {
-	flex-basis: 600px;
-	padding-top: 30px;
-}
-
-@media (max-width: 1024px) {
+	justify-content: center;
+	gap: 1.5rem;
+	border: 1px solid #eaeaea;
+  }
+  
+  .dock-icon {
+	color: var(--primary-color);
+	font-size: 1.5rem;
+  }
+  
+  /* Projects section */
+  .system-folder {
+	background: white;
+	border-radius: 8px;
+	padding: 2rem;
+	border: 1px solid #eaeaea;
+	margin-top: 2rem;
+  }
+  
+  .folder-header {
+	color: var(--primary-color);
+	margin-bottom: 2rem;
+	font-family: 'Fira Code', monospace;
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #eaeaea;
+  }
+  
+  /* Terminal output styling */
+  .terminal-output {
+	font-family: 'Fira Code', monospace;
+	color: #333;
+  }
+  
+  .terminal-output::before {
+	content: ">";
+	margin-right: 0.5rem;
+	color: var(--primary-color);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+	.system-theme {
+	  padding: 1rem;
+	}
+  
 	.homepage-first-area {
-		flex-direction: column;
+	  grid-template-columns: 1fr;
 	}
-
-	.homepage-first-area-left-side {
-		display: flex;
-		flex-direction: column; /* Changed: set direction to column */
-		align-items: flex-start;
-		width: 100%;
-		order: 2;
+  
+	.homepage-container {
+	  padding: 1rem;
+	  position: relative;
+	  left: 1rem;
 	}
-
-	.homepage-title {
-		width: 100% !important;
-		margin-top: 100px;
-        padding-top: 30px;
-		order: 2;
+  
+	.terminal-text {
+	  font-size: 1rem;
 	}
-
-	.homepage-subtitle {
-		width: 100% !important;
-		margin-top: 10px;
-		order: 3;
+  
+	.system-dock {
+	  flex-wrap: wrap;
+	  padding: 0.75rem;
 	}
-
-	.homepage-first-area-right-side {
-		width: 100%;
-		order: 1;
+  
+	.dock-icon {
+	  font-size: 1.25rem;
 	}
-
-	.homepage-image-container {
-		padding-top: 20px;
-		padding-bottom: 20px;
-		margin-left: 10px;
-		order: 1;
-	}
-
-	.homepage-after-title {
-		flex-direction: column;
-	}
-
-	.homepage-projects {
-		flex-basis: auto;
-	}
-
-	.homepage-articles {
-		flex-basis: auto;
-	}
-
-	.homepage-works {
-		flex-basis: auto;
-		margin-left: -25px;
-		margin-right: -25px;
-	}
-}
+  }

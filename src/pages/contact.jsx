@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import { motion } from "framer-motion";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Socials from "../components/about/socials";
@@ -27,38 +27,111 @@ const Contact = () => {
 		document.title = `Contact | ${INFO.main.title}`;
 	}, []);
 
+	// Animation variants
+	const containerVariants = {
+		hidden: { opacity: 0, y: 20 },
+		visible: { 
+			opacity: 1, 
+			y: 0,
+			transition: { duration: 0.6 }
+		}
+	};
+
+	const titleVariants = {
+		hidden: { opacity: 0, y: -20 },
+		visible: { 
+			opacity: 1, 
+			y: 0,
+			transition: { 
+				duration: 0.5,
+				delay: 0.2 
+			}
+		}
+	};
+
+	const contentVariants = {
+		hidden: { opacity: 0, y: 20 },
+		visible: { 
+			opacity: 1, 
+			y: 0,
+			transition: { 
+				duration: 0.5,
+				delay: 0.3 
+			}
+		}
+	};
+
 	return (
 		<React.Fragment>
 			<div className="page-content">
 				<NavBar active="contact" />
-				<div className="content-wrapper">
-					<div className="contact-container">
-						<div className="title contact-title">
+				<motion.div 
+					className="content-wrapper"
+					initial="hidden"
+					animate="visible"
+					variants={containerVariants}
+				>
+					<motion.div 
+						className="contact-container"
+						variants={containerVariants}
+					>
+						<motion.div 
+							className="title contact-title"
+							variants={titleVariants}
+						>
 							{INFO.contact.title !== ""
 								? INFO.contact.title
 								: codedTitle}
-						</div>
+						</motion.div>
 
-						<div className="subtitle contact-subtitle">
+						<motion.div 
+							className="subtitle contact-subtitle"
+							variants={contentVariants}
+						>
 							{INFO.contact.description !== ""
 								? INFO.contact.description
 								: codedDescription}
-						</div>
-					</div>
+						</motion.div>
+					</motion.div>
 
-					<div className="socials-container">
-						<div className="contact-socials">
+					<motion.div 
+						className="socials-container"
+						initial={{ opacity: 0, y: 30 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ 
+							duration: 0.5,
+							delay: 0.4 
+						}}
+					>
+						<motion.div 
+							className="contact-socials"
+							initial={{ opacity: 0, scale: 0.9 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{ 
+								duration: 0.5,
+								delay: 0.5 
+							}}
+						>
 							<Socials />
-						</div>
-					</div>
+						</motion.div>
+					</motion.div>
 
-					<div className="page-footer">
+					<motion.div 
+						className="page-footer"
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ 
+							duration: 0.5,
+							delay: 0.6 
+						}}
+					>
 						<Footer />
-					</div>
-				</div>
+					</motion.div>
+				</motion.div>
 			</div>
 		</React.Fragment>
 	);
 };
 
 export default Contact;
+

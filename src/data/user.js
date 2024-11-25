@@ -4,7 +4,7 @@ const INFO = {
 		name: "Adi Bhan",
 		email: "abhan03@bu.edu",
 		profile_img:
-			"https://media.licdn.com/dms/image/v2/D4E03AQH7Ya78chjq2g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726450626836?e=1732147200&v=beta&t=a8wTtKky1YyN4dMvxTTUtZqI5-gZGuFfoTc1M_miH7A",
+			"/assets/Adi_Zoom.jpg",
 	},
 
 	socials: {
@@ -40,7 +40,7 @@ const INFO = {
 			logos: [
 				"https://cdn.worldvectorlogo.com/logos/react-native-1.svg",
 
-				"https://static-00.iconduck.com/assets.00/mysql-original-wordmark-icon-2048x1064-jfbaqrzh.png",
+				
 				"https://cdn-icons-png.flaticon.com/512/919/919825.png",
 				"https://raw.githubusercontent.com/python-pillow/pillow-logo/main/pillow-logo-dark-text-1280x640.png",
 				"../openai-icon.png",
@@ -72,12 +72,10 @@ const INFO = {
 						  in the lobby of the College of Engineering building at Boston University. Utilized Node.js, Next.js, 
 						  TypeScript, and Sass for seamless performance.`,
 			logos: [
-				"https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png",
-
-				"https://www.svgrepo.com/show/354113/nextjs-icon.svg",
-
-				"https://static-00.iconduck.com/assets.00/postgresql-plain-wordmark-icon-2048x2042-up54u54l.png",
-				"https://www.svgrepo.com/show/303360/nodejs-logo.svg",
+				"/assets/TypeScript.png",
+				"/assets/NextJS.svg",
+				"/assets/PostgresSQL.png",
+				"/assets/NodeJS.svg",
 			],
 			linkText1: "GitHub",
 			link1: "", // Replace with actual GitHub link if available

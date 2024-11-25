@@ -1,7 +1,10 @@
 .all-assignments-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem; /* First value is vertical gap, second is horizontal gap */
+    padding: 1rem;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .assignment-card {
@@ -10,7 +13,7 @@
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    width: calc(50% - 1rem);
+    width: calc(90% - 1rem);
     
 }
 
