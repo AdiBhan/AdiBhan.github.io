@@ -1,0 +1,93 @@
+.experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .file-card {
+    background: white;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.2s ease;
+  }
+  
+  .file-header {
+    background: #f5f5f5;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid #eaeaea;
+    font-family: 'Fira Code', monospace;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .file-content {
+    padding: 1.5rem;
+  }
+  
+  .experience-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+  }
+  
+  .experience-date {
+    font-size: 0.85rem;
+    color: #888;
+    font-family: 'Fira Code', monospace;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-points {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .experience-points li {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  .experience-points li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .experiences-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .experience-title {
+      font-size: 1rem;
+    }
+  
+    .experience-points li {
+      font-size: 0.85rem;
+    }
+  
+    .file-content {
+      padding: 1rem;
+    }
+  }

@@ -18,6 +18,7 @@ import {
 	faCog,
 	faWindowMaximize
   } from "@fortawesome/free-solid-svg-icons";
+import Experiences from "./experiences";
 const Homepage = () => {
 	const containerVariants = {
 		hidden: { opacity: 0 },
@@ -101,8 +102,9 @@ const Homepage = () => {
 		1000,
 		" Initializing portfolio...",
 		1000,
-		{titleText},
+		`${titleText}`,
 		3000,
+		""
 	  ];
 
 	return (
@@ -149,7 +151,7 @@ const Homepage = () => {
 					  variants={textVariants}
 					>
 					  <div className="file-header">
-						<FontAwesomeIcon icon={faFile} /> About.md
+						<FontAwesomeIcon icon={faFile} /> ./About.md
 					  </div>
 					  {codedDescription}
 					</motion.div>
@@ -160,21 +162,22 @@ const Homepage = () => {
 					variants={itemVariants}
 				  >
 					<div className="homepage-image-container">
-					  <motion.div
-						className="homepage-image-wrapper system-window"
-						initial="hidden"
-                        animate="visible"
-                        variants={containerVariants}
-					  >
-						<div className="window-header">
-						  <FontAwesomeIcon icon={faWindowMaximize} /> profile.jpg
-						</div>
-						<img
-						  src={INFO.main.profile_img}
-						  alt="about"
-						  className="homepage-image"
-						/>
-					  </motion.div>
+					<motion.div 
+										className="about-image-wrapper"
+										initial={{ scale: 0.8, opacity: 0 }}
+										animate={{ scale: 1, opacity: 1 }}
+										transition={{ duration: 0.5, delay: 0.4 }}
+									>
+										<motion.img
+											src={INFO.main.profile_img}
+											alt="about"
+											className="about-image"
+											whileHover={{ 
+												scale: 1.1,
+												transition: { duration: 0.3 }
+											}}
+										/>
+									</motion.div>
 					</div>
 				  </motion.div>
 				</div>
@@ -214,10 +217,14 @@ const Homepage = () => {
 					<FontAwesomeIcon icon={faFolder} /> projects/
 				  </div>
 				  <AllProjects />
+				
 				</motion.div>
+				<Experiences/>
 			  </div>
 			</motion.div>
+		
 		  </div>
+
 		</React.Fragment>
 	  );
 	};

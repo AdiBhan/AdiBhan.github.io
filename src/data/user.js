@@ -265,6 +265,26 @@ const INFO = {
 	link: "https://github.com/AdiBhan/CS506-Assignment9.git",
 	demoText: "Demo Video",
 	demoLink: "https://www.youtube.com/watch?v=4ZeF6a9uf8c",
+},
+{
+	title: "abhan03-assignment-10",
+description:
+	"Assignment 10 - Image Search",
+logos: [
+	"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+
+	"https://cdn.worldvectorlogo.com/logos/numpy-1.svg",
+	"https://4008838.fs1.hubspotusercontent-na1.net/hubfs/4008838/supported-scipy.png",
+
+	"https://static-00.iconduck.com/assets.00/flask-icon-1594x2048-84mjydzf.png",
+	"https://media.licdn.com/dms/image/v2/D4D12AQFq38cGkv_oHQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1679493396295?e=2147483647&v=beta&t=8hBosvau_9_t0Nt46DZ89TxWOgFZg_z47cMFn8o5cmM"
+
+
+],
+linkText: "GitHub Link",
+link: "https://github.com/AdiBhan/CS506_Assignment_10",
+demoText: "Demo Video",
+demoLink: "https://www.youtube.com/watch?v=j7dDgSzGHWE",
 }
 		
 
