@@ -13,6 +13,16 @@ const Experiences = () => {
 
   const experienceData = [
     {
+      title: "Incoming Software Development Intern",
+      company: "UKG (Ultimate Kronos Group)",
+      employmentType: "Full-time",
+      date: "January 2025 - April 2025",
+      fileName: "UKG.md",
+      points: [
+        "Incoming software engineering intern selected to join UKG's enterprise software development team",
+      ]
+    },
+    {
       title: "Full Stack Developer",
       company: "Boston University College of Engineering",
       employmentType: "Part-time",
