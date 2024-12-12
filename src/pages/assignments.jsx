@@ -39,7 +39,7 @@ const Assignments = () => {
 
 	return (
 		<React.Fragment>
-			<div className="page-content">
+			<div className="system-theme">
 				<NavBar active="assignments" />
 				<div className="content-wrapper">
 					<div className="assignments-container">

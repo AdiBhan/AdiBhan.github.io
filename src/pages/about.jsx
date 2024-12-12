@@ -75,7 +75,7 @@ const About = () => {
 
 	return (
 		<React.Fragment>
-			<div className="page-content">
+			<div className="system-theme">
 				<NavBar active="about" />
 				<motion.div
 					className="content-wrapper"

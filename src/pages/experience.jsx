@@ -4,13 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import "./styles/experience.css";
 
-const Experience = ({ 
-  title, 
-  company, 
+const Experience = ({
+  title,
+  company,
   employmentType,
-  date, 
+  date,
   points,
-  fileName = null // Optional: custom file name, will default to company name
+  image = "https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg",
+  fileName = null
 }) => {
   const containerVariants = {
     hidden: { scale: 0.8, opacity: 0 },
@@ -18,7 +19,6 @@ const Experience = ({
     hover: { scale: 1.05 }
   };
 
-  // Generate filename from company name if not provided
   const getFileName = () => {
     if (fileName) return fileName;
     return `${company.replace(/\s+/g, '_')}.md`;
@@ -26,11 +26,21 @@ const Experience = ({
 
   return (
     <motion.div
-  
+      className="file-card"
       variants={containerVariants}
       whileHover="hover"
     >
-    
+      <div className="file-header">
+        <FontAwesomeIcon icon={faFile} />
+        {getFileName()}
+      </div>
+      <div className="experience-image-container">
+        <img
+          src={image}
+          alt={company}
+          className="experience-image"
+        />
+      </div>
       <div className="file-content">
         <div className="experience-title">{title}</div>
         <div className="experience-subtitle">

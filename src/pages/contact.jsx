@@ -63,7 +63,7 @@ const Contact = () => {
 
 	return (
 		<React.Fragment>
-			<div className="page-content">
+			<div className="system-theme">
 				<NavBar active="contact" />
 				<motion.div 
 					className="content-wrapper"

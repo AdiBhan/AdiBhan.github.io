@@ -47,7 +47,7 @@ const Projects = () => {
 
 	return (
 		<React.Fragment>
-			<div className="page-content">
+			<div className="system-theme">
 				<NavBar active="projects" />
 				<div className="content-wrapper">
 					<div className="projects-container">

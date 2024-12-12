@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import AllProjects from "../components/projects/allProjects";
 import INFO from "../data/user";
@@ -19,6 +18,7 @@ import {
 	faWindowMaximize,
 } from "@fortawesome/free-solid-svg-icons";
 import Experiences from "./experiences";
+
 const Homepage = () => {
 	const containerVariants = {
 		hidden: { opacity: 0 },
@@ -70,23 +70,66 @@ const Homepage = () => {
 	};
 
 	const codedDescription = (
-		<motion.span variants={textVariants}>
-			Senior majoring in Computer Science at Boston University, set to
-			graduate in May 2025.{" "}
-			<motion.strong
-				whileHover={{ color: "var(--primary-color)" }}
-				transition={{ duration: 0.2 }}
-			>
-				Full-stack developer
-			</motion.strong>{" "}
-			with experience in web applications, SQL databases, cybersecurity,
-			and a track record of success in hackathons. Passionate about
-			leveraging technology to solve real-world problems, with skills
-			ranging from Python and Java to React and cloud platforms.
-		</motion.span>
+<motion.div variants={textVariants} className="description-container">
+    <motion.p className="description-paragraph">
+	<div className="profile-header">
+            <motion.div 
+                className="profile-image-container"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+            >
+                <img 
+                    src={INFO.main.profile_img} 
+                    alt="Profile"
+                    className="profile-image"
+                />
+            </motion.div>
+            <motion.p className="description-paragraph main-intro">
+                <motion.span>
+                    Senior studying Computer Science at Boston University and a passionate software developer dedicated to creating scalable, efficient, and impactful solutions.
+                </motion.span>
+            </motion.p>
+        </div>
+    </motion.p>
+
+    <motion.p className="description-paragraph skill-section">
+        <span className="section-label">Focus Areas →</span>
+        <motion.span
+            className="skill-chip"
+            whileHover={{ scale: 1.05, color: "var(--primary-color)" }}
+        >
+            Web Development
+        </motion.span>
+        <motion.span
+            className="skill-chip"
+            whileHover={{ scale: 1.05, color: "var(--primary-color)" }}
+        >
+            Mobile Development
+        </motion.span>
+        <motion.span
+            className="skill-chip"
+            whileHover={{ scale: 1.05, color: "var(--primary-color)" }}
+        >
+            Cybersecurity
+        </motion.span>
+    </motion.p>
+
+    <motion.p className="description-paragraph tech-stack">
+        <span className="section-label">Tech Stack →</span>
+        <motion.div className="tech-tags">
+            {["Python", "Java", "C#", "React", "Node.js", "Spring Boot", "ASP.NET Core"].map((tech) => (
+                <motion.span
+                    key={tech}
+                    className="tech-tag"
+                    whileHover={{ y: -2 }}
+                >
+                    {tech}
+                </motion.span>
+            ))}
+        </motion.div>
+    </motion.p>
+</motion.div>
 	);
-
-
 
 	useEffect(() => {
 		document.title = `${INFO.main.title}`;
@@ -97,29 +140,16 @@ const Homepage = () => {
 		{ icon: faGithub, link: INFO.socials.github },
 		{ icon: faMailBulk, link: `mailto:${INFO.main.email}` },
 	];
-	const terminalSequence = [
-		"$ systems/init.sh --verbose",
-		800,
-		"$ Loading environment...",
 
-		"[OK] React/Next.js ✓",
-		400,
-		"[OK] Node.js ✓",
-		400,
-		"[OK] Java/Spring Boot ✓",
-		400,
-		"[OK] C#/ASP.NET Core ✓",
-		400,
 
-		"$ Accessing portfolio database...",
-		1000,
-		"Hello! I'm Adi, a Full-Stack Developer and Computer Science student at Boston University.",
-		2500,
-	];
 
 	return (
 		<React.Fragment>
-			<div className="page-content system-theme">
+			<link
+				href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+				rel="stylesheet"
+			></link>
+			<div className=" system-theme">
 				<NavBar active="home" />
 				<motion.div
 					className="content-wrapper terminal-window"
@@ -149,11 +179,14 @@ const Homepage = () => {
 									variants={textVariants}
 								>
 									<TypeAnimation
-										sequence={terminalSequence}
+										sequence={INFO.terminalSequence}
 										speed={50}
-										repeat={1}
+										repeat={0}
 										className="terminal-output"
-										style={{ fontSize: ".5em" }}
+										style={{
+											fontSize: "0.5em",
+											whiteSpace: "pre-wrap",
+										}}
 									/>
 								</motion.div>
 
@@ -161,68 +194,41 @@ const Homepage = () => {
 									className="subtitle homepage-subtitle file-content"
 									variants={textVariants}
 								>
+									{" "}
 									<div className="file-header">
 										<FontAwesomeIcon icon={faFile} />{" "}
 										./About.md
 									</div>
-									{codedDescription}
+									{codedDescription}{" "}
+									<motion.div
+										className="homepage-socials system-dock"
+										variants={itemVariants}
+									>
+										{socials.map((social, index) => (
+											<motion.a
+												key={social.link}
+												href={social.link}
+												target="_blank"
+												rel="noreferrer"
+												custom={index}
+												variants={socialVariants}
+												className="dock-icon"
+												whileHover={{
+													scale: 1.1,
+													y: -2,
+												}}
+												whileTap={{ scale: 0.95 }}
+											>
+												<FontAwesomeIcon
+													icon={social.icon}
+													className="homepage-social-icon"
+												/>
+											</motion.a>
+										))}
+									</motion.div>
 								</motion.div>
 							</motion.div>
-
-							<motion.div
-								className="homepage-first-area-right-side"
-								variants={itemVariants}
-							>
-								<div className="homepage-image-container">
-									<motion.div
-										className="about-image-wrapper"
-										initial={{ scale: 0.8, opacity: 0 }}
-										animate={{ scale: 1, opacity: 1 }}
-										transition={{
-											duration: 0.5,
-											delay: 0.4,
-										}}
-									>
-										<motion.img
-											src={INFO.main.profile_img}
-											alt="about"
-											className="about-image"
-											whileHover={{
-												scale: 1.1,
-												transition: { duration: 0.3 },
-											}}
-										/>
-									</motion.div>
-								</div>
-							</motion.div>
 						</div>
-
-						<motion.div
-							className="homepage-socials system-dock"
-							variants={itemVariants}
-						>
-							{socials.map((social, index) => (
-								<motion.a
-									key={social.link}
-									href={social.link}
-									target="_blank"
-									rel="noreferrer"
-									custom={index}
-									variants={socialVariants}
-									className="dock-icon"
-									whileHover={{
-										scale: 1.1,
-										y: -2,
-									}}
-									whileTap={{ scale: 0.95 }}
-								>
-									<FontAwesomeIcon
-										icon={social.icon}
-										className="homepage-social-icon"
-									/>
-								</motion.a>
-							))}
-						</motion.div>
 
 						<motion.div
 							className="homepage-projects system-folder"
@@ -236,8 +242,10 @@ const Homepage = () => {
 						<Experiences />
 					</div>
 				</motion.div>
-			</div>
+			</div>{" "}
+		
 		</React.Fragment>
 	);
 };
+
 export default Homepage;

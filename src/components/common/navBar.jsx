@@ -50,6 +50,9 @@ const NavBar = (props) => {
 			className="nav-container"
 			initial="hidden"
 			animate="visible"
+			style={{
+				marginTop: "6rem"
+			}}
 			variants={navContainerVariants}
 		>
 			<nav className="navbar">
@@ -85,7 +88,8 @@ const NavBar = (props) => {
 												right: 0,
 												height: '2px',
 												background: 'currentColor',
-												originX: 0
+												originX: 0,
+												
 											}}
 										/>
 									)}

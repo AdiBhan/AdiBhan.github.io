@@ -47,6 +47,7 @@ const INFO = {
         "https://cdn-icons-png.flaticon.com/512/196/196566.png",
 	
 			  "https://cdn.worldvectorlogo.com/logos/docker.svg"
+			  
 			],
 			linkText1: "GitHub",
 			link1: "https://github.com/AdiBhan/Farmify/",
@@ -63,7 +64,8 @@ const INFO = {
 			  "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
 			  "https://cdn.worldvectorlogo.com/logos/react-2.svg",
 			  "https://cdn.worldvectorlogo.com/logos/fastapi-1.svg",
-			  "https://user-images.githubusercontent.com/17984781/231239788-419ee9b0-0211-40f9-9d0a-d192db6718bd.png"
+			  "https://user-images.githubusercontent.com/17984781/231239788-419ee9b0-0211-40f9-9d0a-d192db6718bd.png",
+			  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
 			],
 			linkText1: "GitHub",
 			link1: "https://github.com/AdiBhan/LaneWise/",
@@ -78,9 +80,10 @@ const INFO = {
 			logos: [
 				"https://cdn.worldvectorlogo.com/logos/react-native-1.svg",
 
-				"https://cdn-icons-png.flaticon.com/512/919/919825.png",
+				"https://ih1.redbubble.net/image.4735563815.6531/tst,small,845x845-pad,1000x1000,f8f8f8.jpg",
 				"https://raw.githubusercontent.com/python-pillow/pillow-logo/main/pillow-logo-dark-text-1280x640.png",
-				"../openai-icon.png"
+				"../openai-icon.png",
+				"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
 			],
 			linkText1: "GitHub",
 			link1: "https://github.com/neezacoto/Adi-ai-ads",
@@ -113,7 +116,8 @@ const INFO = {
 				"/assets/NextJS.svg",
 				"/assets/PostgresSQL.png",
 				"/assets/NodeJS.svg",
-			  "https://cdn.worldvectorlogo.com/logos/docker.svg"
+			  "https://cdn.worldvectorlogo.com/logos/docker.svg",
+			  "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
 			],
 			linkText1: "GitHub",
 			link1: "", // Replace with actual GitHub link if available
@@ -323,6 +327,30 @@ const INFO = {
 			linkText: "GitHub Link",
 			link: "https://github.com/AdiBhan/cs506_extra_credit",
 		},
+	],
+	 terminalSequence: [
+		"$ npm create portfolio@latest",
+		800,
+		"$ Installing dependencies...",
+		400,
+		"[⚡] Found compatible packages...",
+		400,
+		"[🔗] @react/next.js v18.2.0 installed  (0.6s)...",
+		400,
+		"[🚀] @node/core v20.9.0 installed (0.8s)...",
+		400,
+		"[🛠️] @spring/boot v3.2.0 installed  (0.7s)...",
+		400,
+		"[🖥️] @dotnet/aspnet v8.0.0 installed  (0.4s)...",
+		400,
+		"$ Initializing portfolio...",
+		800,
+		"[✨] Portfolio ready!",
+		400,
+		"$ echo 'Hello! I'm Adi, a Computer Science student at Boston University. Incoming Software Engineering Spring Co-op at UKG. '",
+		2500,
+
+		"$ echo 'Hello! I'm Adi, a Computer Science student at Boston University. Incoming Software Engineering Spring Co-op at UKG. '",
 	],
 };
 

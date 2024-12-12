@@ -91,3 +91,104 @@
       padding: 1rem;
     }
   }
+  .experience-image-container {
+    width: 100%;
+    height: 140px; 
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .experience-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .file-card:hover .experience-image {
+    transform: scale(1.05);
+  }
+  
+  .file-content {
+    padding: 1.5rem;
+  }
+  
+  .experience-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  .system-theme {
+    background-color: #ffffff;
+    background-image: 
+        radial-gradient(#e6e6e6 1px, transparent 1px),
+        radial-gradient(#e6e6e6 1px, #ffffff 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    min-height: 100vh;
+    padding: 2rem;
+}
+  .experience-subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+  }
+  
+  .experience-date {
+    font-size: 0.85rem;
+    color: #888;
+    font-family: 'Fira Code', monospace;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-points {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .experience-points li {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  .experience-points li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .experiences-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .experience-image-container {
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .experience-title {
+      font-size: 1rem;
+    }
+  
+    .experience-points li {
+      font-size: 0.85rem;
+    }
+  
+    .file-content {
+      padding: 1rem;
+    }
+  
+    .experience-image-container {
+      height: 160px;
+    }
+  }
